@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0049)file:///Users/alvarobarra/Downloads/index_71.html -->
+<!-- saved from url=(0049)file:///Users/alvarobarra/Downloads/index_72.html -->
 <html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -21,7 +21,7 @@
   --purple:#AF52DE;--purple-bg:rgba(175,82,222,.1);
   --teal:#30B0C7;--teal-bg:rgba(48,176,199,.1);
   --pink:#FF2D55;--pink-bg:rgba(255,45,85,.1);
-  --tab-h:82px;--nav-h:52px;
+  --tab-h:88px;--nav-h:52px;
   --radius:13px;--radius-lg:20px;--radius-sm:8px;
   --shadow:0 2px 8px rgba(0,0,0,.08);
   --shadow-md:0 4px 20px rgba(0,0,0,.12);
@@ -61,14 +61,16 @@ select{-webkit-appearance:none;appearance:none}
 .autosave-badge{display:inline-flex;align-items:center;gap:3px;padding:3px 8px;border-radius:20px;font-size:11px;font-weight:600;background:var(--green-bg);color:var(--green-dark);flex-shrink:0}
 .autosave-badge.saving{background:var(--orange-bg);color:var(--orange)}
 .profile-switch-btn{display:flex;align-items:center;gap:4px;padding:5px 10px;border-radius:20px;font-size:11.5px;font-weight:700;cursor:pointer;border:1.5px solid var(--accent);color:var(--accent);flex-shrink:0;margin-left:6px}
-.tab-bar{height:var(--tab-h);background:rgba(249,249,249,.94);backdrop-filter:blur(20px);border-top:1px solid var(--border);display:flex;align-items:flex-start;padding-top:10px;flex-shrink:0;z-index:150}
-[data-theme="dark"] .tab-bar{background:rgba(28,28,30,.94)}
-.tab-item{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer;padding:0 2px;position:relative}
-.tab-item i{font-size:26px;color:var(--ink3)}
-.tab-item.active i{color:var(--accent)}
-.tab-label{font-size:10px;font-weight:500;color:var(--ink3);text-align:center;line-height:1.2}
-.tab-item.active .tab-label{color:var(--accent)}
-.tab-badge{position:absolute;top:-2px;right:calc(50% - 22px);background:var(--red);color:#fff;font-size:10px;font-weight:700;min-width:16px;height:16px;border-radius:8px;padding:0 4px;display:flex;align-items:center;justify-content:center;border:1.5px solid var(--surface)}
+.tab-bar{height:var(--tab-h);background:rgba(252,252,252,.96);backdrop-filter:saturate(180%) blur(24px);-webkit-backdrop-filter:saturate(180%) blur(24px);border-top:.5px solid rgba(60,60,67,.2);display:flex;align-items:flex-start;padding:10px 4px 0;flex-shrink:0;z-index:150}
+[data-theme="dark"] .tab-bar{background:rgba(22,22,23,.96);border-top-color:rgba(255,255,255,.12)}
+.tab-item{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;padding:0 2px;position:relative;-webkit-tap-highlight-color:transparent;user-select:none}
+.tab-item-icon{width:52px;height:34px;display:flex;align-items:center;justify-content:center;border-radius:12px;transition:background .15s,transform .12s}
+.tab-item:active .tab-icon-wrap{transform:scale(.88)}
+.tab-item i{font-size:27px;color:var(--ink3);transition:color .15s,transform .15s;display:block}
+.tab-item.active i{color:var(--accent);transform:scale(1.08)}
+.tab-label{font-size:10.5px;font-weight:500;color:var(--ink3);text-align:center;line-height:1.2;letter-spacing:-.01em;transition:color .15s}
+.tab-item.active .tab-label{color:var(--accent);font-weight:600}
+.tab-badge{position:absolute;top:0px;right:calc(50% - 24px);background:var(--red);color:#fff;font-size:10px;font-weight:700;min-width:17px;height:17px;border-radius:9px;padding:0 4px;display:flex;align-items:center;justify-content:center;border:2px solid var(--surface);box-shadow:0 1px 4px rgba(255,59,48,.4)}
 .screen-scroll{flex:1;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch}
 .screen-scroll::-webkit-scrollbar{display:none}
 .list-body{background:var(--surface);border-radius:var(--radius);overflow:hidden;margin:0 16px}
@@ -209,8 +211,8 @@ select{-webkit-appearance:none;appearance:none}
 </style>
 </head>
 <body>
-<div id="root"><div class="app-shell" data-fontsize="normal" style="--accent: #007AFF;"><div class="status-bar"><div class="dynamic-island"></div><div class="status-time">17:58</div><div class="status-icons"><i class="ph ph-wifi-high" style="font-size: 16px;"></i><i class="ph ph-battery-full" style="font-size: 16px;"></i></div></div><div class="greeting-bar"><div class="avatar" style="width: 32px; height: 32px; font-size: 11.52px; background: rgb(90, 200, 250);">AB</div><div style="flex: 1 1 0%; min-width: 0px;"><div class="greeting-name">Hola, Alvaro Barra</div><div style="font-size: 11px; color: var(--ink3); margin-top: 1px;">Ed. Diferencial</div></div><div class="autosave-badge saving"><i class="ph ph-arrows-clockwise" style="font-size: 11px;"></i>Guardando</div><button class="profile-switch-btn"><i class="ph ph-briefcase" style="font-size: 13px;"></i>Coord.</button></div><div style="flex: 1 1 0%; display: flex; flex-direction: column; overflow: hidden;"><div class="screen-scroll"><div class="hero-card fade-up" style="background: linear-gradient(135deg, rgb(28, 69, 50) 0%, rgb(45, 106, 79) 60%, rgb(82, 183, 136) 100%);"><div class="hero-title">Hola, Alvaro</div><div class="hero-sub">Profersor de Educacion especial · Liceo Técnico Profesional de Río Bueno</div><div class="hero-stats"><div style="text-align: center;"><div class="hero-stat-n">8</div><div class="hero-stat-l">Estudiantes</div></div><div style="text-align: center;"><div class="hero-stat-n">6</div><div class="hero-stat-l">NEET</div></div><div style="text-align: center;"><div class="hero-stat-n">2</div><div class="hero-stat-l">NEEP</div></div><div style="text-align: center;"><div class="hero-stat-n">0</div><div class="hero-stat-l">Hoy</div></div></div></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 14px 16px 0px;"><div class="fade-up" style="background: var(--surface); border-radius: var(--radius); padding: 13px; cursor: pointer; display: flex; align-items: center; gap: 9px; animation-delay: 0s;"><div style="width: 38px; height: 38px; border-radius: 10px; background: rgb(0, 122, 255); display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><i class="ph ph-users" style="font-size: 19px; color: rgb(255, 255, 255);"></i></div><div><div style="font-size: 13.5px; font-weight: 600; color: var(--ink); line-height: 1.3;">Mis estudiantes</div><div style="font-size: 11px; color: var(--ink3); margin-top: 2px;">8 en PIE</div></div></div><div class="fade-up" style="background: var(--surface); border-radius: var(--radius); padding: 13px; cursor: pointer; display: flex; align-items: center; gap: 9px; animation-delay: 0.05s;"><div style="width: 38px; height: 38px; border-radius: 10px; background: rgb(52, 199, 89); display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><i class="ph ph-calendar-plus" style="font-size: 19px; color: rgb(255, 255, 255);"></i></div><div><div style="font-size: 13.5px; font-weight: 600; color: var(--ink); line-height: 1.3;">Nueva cita</div><div style="font-size: 11px; color: var(--ink3); margin-top: 2px;">Agendar atención</div></div></div><div class="fade-up" style="background: var(--surface); border-radius: var(--radius); padding: 13px; cursor: pointer; display: flex; align-items: center; gap: 9px; animation-delay: 0.1s;"><div style="width: 38px; height: 38px; border-radius: 10px; background: rgb(255, 149, 0); display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><i class="ph ph-clipboard-text" style="font-size: 19px; color: rgb(255, 255, 255);"></i></div><div><div style="font-size: 13.5px; font-weight: 600; color: var(--ink); line-height: 1.3;">Evaluaciones</div><div style="font-size: 11px; color: var(--ink3); margin-top: 2px;">Registrar o revisar</div></div></div><div class="fade-up" style="background: var(--surface); border-radius: var(--radius); padding: 13px; cursor: pointer; display: flex; align-items: center; gap: 9px; animation-delay: 0.15s;"><div style="width: 38px; height: 38px; border-radius: 10px; background: rgb(255, 45, 85); display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><i class="ph ph-cake" style="font-size: 19px; color: rgb(255, 255, 255);"></i></div><div><div style="font-size: 13.5px; font-weight: 600; color: var(--ink); line-height: 1.3;">Cumpleaños</div><div style="font-size: 11px; color: var(--ink3); margin-top: 2px;">0 próximos</div></div></div></div><div class="sec-title" style="padding-top: 14px;">Mis cursos</div><div style="margin: 0px 16px 28px;"><div class="sched-row" style="border-radius: var(--radius) var(--radius) 0 0; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; background: var(--surface);"><div style="width: 36px; height: 36px; background: var(--blue-bg); border-radius: 9px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><i class="ph ph-chalkboard-teacher" style="font-size: 18px; color: var(--blue);"></i></div><div class="sched-info"><div class="sched-title">1°MA</div><div class="sched-meta">4 est. · 3 NEET · 1 NEEP</div></div><i class="ph ph-caret-right" style="color: var(--ink3); font-size: 18px;"></i></div><div class="sched-row" style="border-radius: 0 0 var(--radius) var(--radius); border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; background: var(--surface);"><div style="width: 36px; height: 36px; background: var(--blue-bg); border-radius: 9px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><i class="ph ph-chalkboard-teacher" style="font-size: 18px; color: var(--blue);"></i></div><div class="sched-info"><div class="sched-title">1°MB</div><div class="sched-meta">4 est. · 3 NEET · 1 NEEP</div></div><i class="ph ph-caret-right" style="color: var(--ink3); font-size: 18px;"></i></div></div></div></div><div class="tab-bar"><div class="tab-item active"><i class="ph ph-house-fill"></i><span class="tab-label">Inicio</span></div><div class="tab-item "><i class="ph ph-chalkboard"></i><span class="tab-label">Cursos</span></div><div class="tab-item "><i class="ph ph-calendar"></i><span class="tab-label">Agenda</span></div><div class="tab-item "><i class="ph ph-clipboard-text"></i><span class="tab-label">Evaluaciones</span></div><div class="tab-item "><i class="ph ph-gear"></i><span class="tab-label">Ajustes</span></div></div><div class="toast "><i class="ph ph-check-circle"></i></div></div></div>
-<script>/* React 18.2.0 inline */
+<div id="root"><div class="app-shell" data-fontsize="normal" style="justify-content: center; --accent: #007AFF;"><div class="status-bar"><div class="dynamic-island"></div><div class="status-time">18:46</div><div class="status-icons"><i class="ph ph-wifi-high" style="font-size: 16px;"></i><i class="ph ph-battery-full" style="font-size: 16px;"></i></div></div><div class="login-wrap"><div style="text-align: center;"><div style="width: 80px; height: 80px; background: linear-gradient(135deg, rgb(28, 69, 50), rgb(82, 183, 136)); border-radius: 22px; display: flex; align-items: center; justify-content: center; margin: 0px auto 16px; box-shadow: rgba(52, 199, 89, 0.35) 0px 8px 24px;"><i class="ph ph-heartbeat" style="font-size: 38px; color: rgb(255, 255, 255);"></i></div><div style="font-family: var(--fnt-head); font-size: 40px; color: var(--ink); letter-spacing: -0.03em;">EduMax PIE</div><div style="font-size: 14px; color: var(--ink2); margin-top: 4px;">Programa de Integración Escolar</div></div><div class="login-card"><div style="text-align: center;"><div style="font-weight: 700; font-size: 18px;">Acceso seguro</div><div style="font-size: 14px; color: var(--ink2); margin-top: 4px;">Ingresa tu contraseña PIE</div></div><div><input type="password" placeholder="Contraseña" value="" style="width: 100%; background: var(--surface2); border: 1.5px solid var(--border2); border-radius: 12px; padding: 14px 16px; font-size: 17px; outline: none; color: var(--ink);"></div><button class="btn btn-green"><i class="ph ph-sign-in" style="font-size: 20px;"></i>Ingresar</button><div style="height: 1px; background: var(--border);"></div><button style="color: var(--blue); font-size: 14px; font-weight: 600; text-align: center; padding: 4px 0px;">Registrar nuevo profesional</button></div></div></div></div>
+<script>/* React 18.2.0 */
 /**
  * @license React
  * react.production.min.js
@@ -244,7 +246,7 @@ c.useSyncExternalStore=function(a,b,c){return g.current.useSyncExternalStore(a,b
 })();
 
 </script>
-<script>/* ReactDOM 18.2.0 inline */
+<script>/* ReactDOM 18.2.0 */
 /**
  * @license React
  * react-dom.production.min.js
@@ -2723,7 +2725,8 @@ function CursosScreen(_ref11) {
     aulaLogs = _ref11.aulaLogs,
     setAulaLogs = _ref11.setAulaLogs,
     cursos = _ref11.cursos,
-    setCursos = _ref11.setCursos;
+    setCursos = _ref11.setCursos,
+    isCoord = _ref11.isCoord;
   var _useState13 = useState(''),
     _useState14 = _slicedToArray(_useState13, 2),
     search = _useState14[0],
@@ -2748,6 +2751,83 @@ function CursosScreen(_ref11) {
     _useState24 = _slicedToArray(_useState23, 2),
     nc = _useState24[0],
     setNc = _useState24[1];
+  var _useState25 = useState(''),
+    _useState26 = _slicedToArray(_useState25, 2),
+    importMsg = _useState26[0],
+    setImportMsg = _useState26[1];
+  var importExcel = function importExcel(e) {
+    var file = e.target.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function (ev) {
+      try {
+        var text = ev.target.result;
+        var rows = text.split(/\r?\n/).filter(function (r) {
+          return r.trim();
+        });
+        var newStudents = [];
+        var cursoActual = '';
+        rows.forEach(function (row) {
+          var cols = row.split(/[,;\t]/);
+          var cell0 = (cols[0] || '').trim();
+          var cell1 = (cols[1] || '').trim();
+          if (!cell1 && cell0) {
+            // Fila con solo un valor = nombre de curso
+            if (cell0.match(/^\d|°|[MABmab]/)) {
+              cursoActual = cell0.toUpperCase();
+              return;
+            }
+          }
+          if (cell0 && (cell1 || cell0.includes(' '))) {
+            var nombre = cell1 ? cell0 + ' ' + cell1 : cell0;
+            if (nombre.length > 2 && !nombre.match(/^(nombre|name|alumno|estudiante)/i)) {
+              // Detectar si primera col es curso
+              var possibleCurso = cols[0] && cols[0].trim().match(/^(\d°|\d|[A-Z]°)/) ? cols[0].trim() : '';
+              var possibleNombre = possibleCurso ? (cols[1] || '').trim() + (cols[2] ? ' ' + (cols[2] || '').trim() : '') : nombre;
+              var curso = possibleCurso ? possibleCurso.toUpperCase() : cursoActual || 'Sin curso';
+              if (possibleNombre.length > 2) {
+                newStudents.push({
+                  id: newId(),
+                  curso: curso,
+                  nombre: possibleNombre.trim(),
+                  rut: '',
+                  fnac: '',
+                  nee: 'NEET',
+                  diag: 'TDAH (Déficit Atencional e Hiperactividad)',
+                  auth: '',
+                  evalDate: '',
+                  revalDate: '',
+                  situacion: 'EN EVALUACIÓN',
+                  profesional: '',
+                  obs: 'Por completar'
+                });
+                if (!cursos.includes(curso)) setCursos(function (p) {
+                  return [].concat(_toConsumableArray(p), [curso]);
+                });
+              }
+            }
+          }
+        });
+        if (newStudents.length > 0) {
+          setStudents(function (p) {
+            return [].concat(_toConsumableArray(p), _toConsumableArray(newStudents.filter(function (ns) {
+              return !p.some(function (ex) {
+                return ex.nombre.toLowerCase() === ns.nombre.toLowerCase();
+              });
+            })));
+          });
+          setImportMsg('✓ ' + newStudents.length + ' estudiantes importados');
+        } else setImportMsg('Sin datos válidos en el archivo');
+        setTimeout(function () {
+          return setImportMsg('');
+        }, 4000);
+      } catch (err) {
+        setImportMsg('Error al leer el archivo: ' + err.message);
+      }
+    };
+    reader.readAsText(file, 'UTF-8');
+    e.target.value = '';
+  };
   var filtered = useMemo(function () {
     return students.filter(function (s) {
       if (fc && s.curso !== fc) return false;
@@ -2815,7 +2895,35 @@ function CursosScreen(_ref11) {
   };
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(NavBar, {
     title: "Cursos y Estudiantes",
-    right: /*#__PURE__*/React.createElement("button", {
+    right: /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: 'flex',
+        gap: 8,
+        alignItems: 'center'
+      }
+    }, isCoord && /*#__PURE__*/React.createElement("label", {
+      style: {
+        color: 'var(--blue)',
+        fontSize: 13,
+        fontWeight: 600,
+        cursor: 'pointer',
+        display: 'flex',
+        alignItems: 'center',
+        gap: 3
+      }
+    }, /*#__PURE__*/React.createElement("i", {
+      className: "ph ph-file-arrow-up",
+      style: {
+        fontSize: 18
+      }
+    }), "Excel", /*#__PURE__*/React.createElement("input", {
+      type: "file",
+      accept: ".csv,.txt,.tsv",
+      style: {
+        display: 'none'
+      },
+      onChange: importExcel
+    })), /*#__PURE__*/React.createElement("button", {
       onClick: function onClick() {
         return setOpenSt({
           st: null,
@@ -2835,8 +2943,18 @@ function CursosScreen(_ref11) {
       style: {
         fontSize: 22
       }
-    }), "Nuevo")
-  }), /*#__PURE__*/React.createElement("div", {
+    }), "Nuevo"))
+  }), importMsg && /*#__PURE__*/React.createElement("div", {
+    style: {
+      margin: '8px 16px 0',
+      padding: '10px 14px',
+      background: 'var(--green-bg)',
+      color: 'var(--green-dark)',
+      borderRadius: 9,
+      fontSize: 14,
+      fontWeight: 600
+    }
+  }, importMsg), /*#__PURE__*/React.createElement("div", {
     className: "screen-scroll",
     style: {
       flex: 1
@@ -3113,40 +3231,40 @@ function StudentSheet(_ref12) {
     profesional: '',
     obs: ''
   };
-  var _useState25 = useState(isNew ? blank : _objectSpread({}, student)),
-    _useState26 = _slicedToArray(_useState25, 2),
-    f = _useState26[0],
-    setF = _useState26[1];
-  var _useState27 = useState('datos'),
+  var _useState27 = useState(isNew ? blank : _objectSpread({}, student)),
     _useState28 = _slicedToArray(_useState27, 2),
-    tab = _useState28[0],
-    setTab = _useState28[1];
-  var _useState29 = useState(false),
+    f = _useState28[0],
+    setF = _useState28[1];
+  var _useState29 = useState('datos'),
     _useState30 = _slicedToArray(_useState29, 2),
-    showObs = _useState30[0],
-    setShowObs = _useState30[1];
+    tab = _useState30[0],
+    setTab = _useState30[1];
   var _useState31 = useState(false),
     _useState32 = _slicedToArray(_useState31, 2),
-    showAula = _useState32[0],
-    setShowAula = _useState32[1];
-  var _useState33 = useState({
+    showObs = _useState32[0],
+    setShowObs = _useState32[1];
+  var _useState33 = useState(false),
+    _useState34 = _slicedToArray(_useState33, 2),
+    showAula = _useState34[0],
+    setShowAula = _useState34[1];
+  var _useState35 = useState({
       date: todayStr(),
       context: 'Sala de clases',
       type: '',
       detail: ''
     }),
-    _useState34 = _slicedToArray(_useState33, 2),
-    of = _useState34[0],
-    setOf = _useState34[1];
-  var _useState35 = useState({
+    _useState36 = _slicedToArray(_useState35, 2),
+    of = _useState36[0],
+    setOf = _useState36[1];
+  var _useState37 = useState({
       date: todayStr(),
       activity: '',
       detail: '',
       studentIds: student ? [student.id] : []
     }),
-    _useState36 = _slicedToArray(_useState35, 2),
-    af = _useState36[0],
-    setAf = _useState36[1];
+    _useState38 = _slicedToArray(_useState37, 2),
+    af = _useState38[0],
+    setAf = _useState38[1];
   var set = function set(k, v) {
     return setF(function (p) {
       return _objectSpread(_objectSpread({}, p), {}, _defineProperty({}, k, v));
@@ -3704,22 +3822,22 @@ function AgendaScreen(_ref13) {
     setAgenda = _ref13.setAgenda,
     students = _ref13.students,
     alertSettings = _ref13.alertSettings;
-  var _useState37 = useState(false),
-    _useState38 = _slicedToArray(_useState37, 2),
-    showAdd = _useState38[0],
-    setShowAdd = _useState38[1];
-  var _useState39 = useState(null),
+  var _useState39 = useState(false),
     _useState40 = _slicedToArray(_useState39, 2),
-    editEv = _useState40[0],
-    setEditEv = _useState40[1];
-  var _useState41 = useState(''),
+    showAdd = _useState40[0],
+    setShowAdd = _useState40[1];
+  var _useState41 = useState(null),
     _useState42 = _slicedToArray(_useState41, 2),
-    fd = _useState42[0],
-    setFd = _useState42[1];
-  var _useState43 = useState(null),
+    editEv = _useState42[0],
+    setEditEv = _useState42[1];
+  var _useState43 = useState(''),
     _useState44 = _slicedToArray(_useState43, 2),
-    expandId = _useState44[0],
-    setExpandId = _useState44[1];
+    fd = _useState44[0],
+    setFd = _useState44[1];
+  var _useState45 = useState(null),
+    _useState46 = _slicedToArray(_useState45, 2),
+    expandId = _useState46[0],
+    setExpandId = _useState46[1];
   var sorted = useMemo(function () {
     return _toConsumableArray(agenda).sort(function (a, b) {
       return a.fecha.localeCompare(b.fecha) || a.hora.localeCompare(b.hora);
@@ -3946,6 +4064,7 @@ function AgendaScreen(_ref13) {
   })), showAdd && /*#__PURE__*/React.createElement(AgendaForm, {
     initial: editEv,
     students: students,
+    profs: profs || [],
     defaultAlert: alertSettings.minutes,
     onSave: function onSave(ev) {
       if (editEv) setAgenda(function (p) {
@@ -3969,6 +4088,7 @@ function AgendaScreen(_ref13) {
 function AgendaForm(_ref16) {
   var initial = _ref16.initial,
     students = _ref16.students,
+    profs = _ref16.profs,
     defaultAlert = _ref16.defaultAlert,
     onSave = _ref16.onSave,
     onClose = _ref16.onClose;
@@ -3984,10 +4104,10 @@ function AgendaForm(_ref16) {
     lugar: 'Aula de Recursos',
     obs: ''
   };
-  var _useState45 = useState(initial || blank),
-    _useState46 = _slicedToArray(_useState45, 2),
-    f = _useState46[0],
-    setF = _useState46[1];
+  var _useState47 = useState(initial || blank),
+    _useState48 = _slicedToArray(_useState47, 2),
+    f = _useState48[0],
+    setF = _useState48[1];
   var s = function s(k, v) {
     return setF(function (p) {
       return _objectSpread(_objectSpread({}, p), {}, _defineProperty({}, k, v));
@@ -4113,6 +4233,48 @@ function AgendaForm(_ref16) {
     }, st.nombre, " (", st.curso, ")");
   })))), /*#__PURE__*/React.createElement("label", {
     className: "field-label"
+  }, "Profesional PIE (opcional)"), /*#__PURE__*/React.createElement("div", {
+    className: "field-inner"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "field-row"
+  }, /*#__PURE__*/React.createElement("label", null, "Profesional"), /*#__PURE__*/React.createElement("select", {
+    value: f.profId || '',
+    onChange: function onChange(e) {
+      return s('profId', e.target.value);
+    },
+    style: {
+      textAlign: 'right'
+    }
+  }, /*#__PURE__*/React.createElement("option", {
+    value: ""
+  }, "\u2014 Ninguno \u2014"), (profs || []).map(function (p) {
+    return /*#__PURE__*/React.createElement("option", {
+      key: p.id,
+      value: p.id
+    }, p.nombre, " \xB7 ", p.rol);
+  })))), /*#__PURE__*/React.createElement("label", {
+    className: "field-label"
+  }, "Profesional PIE (opcional)"), /*#__PURE__*/React.createElement("div", {
+    className: "field-inner"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "field-row"
+  }, /*#__PURE__*/React.createElement("label", null, "Profesional"), /*#__PURE__*/React.createElement("select", {
+    value: f.profId || '',
+    onChange: function onChange(e) {
+      return s('profId', e.target.value);
+    },
+    style: {
+      textAlign: 'right'
+    }
+  }, /*#__PURE__*/React.createElement("option", {
+    value: ""
+  }, "\u2014 Ninguno \u2014"), (profs || []).map(function (p) {
+    return /*#__PURE__*/React.createElement("option", {
+      key: p.id,
+      value: p.id
+    }, p.nombre, " \xB7 ", p.rol);
+  })))), /*#__PURE__*/React.createElement("label", {
+    className: "field-label"
   }, "Notas"), /*#__PURE__*/React.createElement("div", {
     className: "field-inner"
   }, /*#__PURE__*/React.createElement("div", {
@@ -4137,14 +4299,14 @@ function EvaluacionesScreen(_ref19) {
     setEvals = _ref19.setEvals,
     students = _ref19.students,
     profs = _ref19.profs;
-  var _useState47 = useState(false),
-    _useState48 = _slicedToArray(_useState47, 2),
-    showAdd = _useState48[0],
-    setShowAdd = _useState48[1];
-  var _useState49 = useState(null),
+  var _useState49 = useState(false),
     _useState50 = _slicedToArray(_useState49, 2),
-    editEv = _useState50[0],
-    setEditEv = _useState50[1];
+    showAdd = _useState50[0],
+    setShowAdd = _useState50[1];
+  var _useState51 = useState(null),
+    _useState52 = _slicedToArray(_useState51, 2),
+    editEv = _useState52[0],
+    setEditEv = _useState52[1];
   var blank = {
     studentId: '',
     tipo: 'Psicológica',
@@ -4153,10 +4315,10 @@ function EvaluacionesScreen(_ref19) {
     resultado: '',
     prox: ''
   };
-  var _useState51 = useState(blank),
-    _useState52 = _slicedToArray(_useState51, 2),
-    f = _useState52[0],
-    setF = _useState52[1];
+  var _useState53 = useState(blank),
+    _useState54 = _slicedToArray(_useState53, 2),
+    f = _useState54[0],
+    setF = _useState54[1];
   var sf = function sf(k, v) {
     return setF(function (p) {
       return _objectSpread(_objectSpread({}, p), {}, _defineProperty({}, k, v));
@@ -4421,14 +4583,14 @@ function EquipoScreen(_ref20) {
   var profs = _ref20.profs,
     setProfs = _ref20.setProfs,
     agenda = _ref20.agenda;
-  var _useState53 = useState('equipo'),
-    _useState54 = _slicedToArray(_useState53, 2),
-    seg = _useState54[0],
-    setSeg = _useState54[1];
-  var _useState55 = useState(null),
+  var _useState55 = useState('equipo'),
     _useState56 = _slicedToArray(_useState55, 2),
-    openP = _useState56[0],
-    setOpenP = _useState56[1];
+    seg = _useState56[0],
+    setSeg = _useState56[1];
+  var _useState57 = useState(null),
+    _useState58 = _slicedToArray(_useState57, 2),
+    openP = _useState58[0],
+    setOpenP = _useState58[1];
   var save = function save(f) {
     if (f.id === 'new') setProfs(function (p) {
       return [].concat(_toConsumableArray(p), [_objectSpread(_objectSpread({}, f), {}, {
@@ -4625,13 +4787,24 @@ function EquipoScreen(_ref20) {
       }, DAY_LABELS[d].slice(0, 3)), (((_p$horario = p.horario) === null || _p$horario === void 0 ? void 0 : _p$horario[d]) || []).length === 0 ? /*#__PURE__*/React.createElement("div", {
         className: "week-slot empty"
       }, "\u2014") : (p.horario[d] || []).map(function (h, i) {
+        var hora = _typeof(h) === 'object' ? h.hora : h;
+        var desc = _typeof(h) === 'object' && h.desc ? h.desc : '';
         return /*#__PURE__*/React.createElement("div", {
           key: i,
           className: "week-slot filled",
           style: {
-            background: col
+            background: col,
+            flexDirection: 'column',
+            gap: 1
           }
-        }, h);
+        }, /*#__PURE__*/React.createElement("span", null, hora), desc && /*#__PURE__*/React.createElement("span", {
+          style: {
+            fontSize: 9,
+            opacity: .85,
+            fontWeight: 400,
+            lineHeight: 1.2
+          }
+        }, desc));
       }));
     })));
   }))), openP && /*#__PURE__*/React.createElement(ProfSheet, {
@@ -4670,24 +4843,34 @@ function ProfSheet(_ref21) {
     },
     obs: ''
   };
-  var _useState57 = useState(isNew ? blank : _objectSpread(_objectSpread({}, prof), {}, {
+  var _useState59 = useState(isNew ? blank : _objectSpread(_objectSpread({}, prof), {}, {
       horario: _objectSpread({}, prof.horario)
     })),
-    _useState58 = _slicedToArray(_useState57, 2),
-    f = _useState58[0],
-    setF = _useState58[1];
-  var _useState59 = useState('lun'),
     _useState60 = _slicedToArray(_useState59, 2),
-    activeDay = _useState60[0],
-    setActiveDay = _useState60[1];
-  var _useState61 = useState(''),
+    f = _useState60[0],
+    setF = _useState60[1];
+  var _useState61 = useState('lun'),
     _useState62 = _slicedToArray(_useState61, 2),
-    newSlot = _useState62[0],
-    setNewSlot = _useState62[1];
-  var _useState63 = useState('datos'),
+    activeDay = _useState62[0],
+    setActiveDay = _useState62[1];
+  var _useState63 = useState(''),
     _useState64 = _slicedToArray(_useState63, 2),
-    tab = _useState64[0],
-    setTab = _useState64[1];
+    newSlot = _useState64[0],
+    setNewSlot = _useState64[1];
+  var _useState65 = useState(''),
+    _useState66 = _slicedToArray(_useState65, 2),
+    newSlotDesc = _useState66[0],
+    setNewSlotDesc = _useState66[1];
+  var _useState67 = useState('datos'),
+    _useState68 = _slicedToArray(_useState67, 2),
+    tab = _useState68[0],
+    setTab = _useState68[1];
+  var slotHora = function slotHora(s) {
+    return _typeof(s) === 'object' ? s.hora : s;
+  };
+  var slotDesc = function slotDesc(s) {
+    return _typeof(s) === 'object' && s.desc ? s.desc : '';
+  };
   var set = function set(k, v) {
     return setF(function (p) {
       return _objectSpread(_objectSpread({}, p), {}, _defineProperty({}, k, v));
@@ -4695,12 +4878,17 @@ function ProfSheet(_ref21) {
   };
   var addSlot = function addSlot() {
     if (!newSlot) return;
+    var entry = newSlotDesc.trim() ? {
+      hora: newSlot,
+      desc: newSlotDesc.trim()
+    } : newSlot;
     setF(function (p) {
       return _objectSpread(_objectSpread({}, p), {}, {
-        horario: _objectSpread(_objectSpread({}, p.horario), {}, _defineProperty({}, activeDay, [].concat(_toConsumableArray(p.horario[activeDay] || []), [newSlot])))
+        horario: _objectSpread(_objectSpread({}, p.horario), {}, _defineProperty({}, activeDay, [].concat(_toConsumableArray(p.horario[activeDay] || []), [entry])))
       });
     });
     setNewSlot('');
+    setNewSlotDesc('');
   };
   var delSlot = function delSlot(d, i) {
     return setF(function (p) {
@@ -4891,13 +5079,19 @@ function ProfSheet(_ref21) {
         padding: '10px 14px',
         marginBottom: 6
       }
-    }, /*#__PURE__*/React.createElement("span", {
+    }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("span", {
       style: {
         fontWeight: 700,
         color: 'var(--blue)',
         fontSize: 15
       }
-    }, slot), /*#__PURE__*/React.createElement("button", {
+    }, slotHora(slot)), slotDesc(slot) && /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 12,
+        color: 'var(--ink2)',
+        marginTop: 2
+      }
+    }, slotDesc(slot))), /*#__PURE__*/React.createElement("button", {
       onClick: function onClick() {
         return delSlot(activeDay, i);
       },
@@ -4915,14 +5109,20 @@ function ProfSheet(_ref21) {
       gap: 8,
       marginTop: 8
     }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 6
+    }
   }, /*#__PURE__*/React.createElement("input", {
     value: newSlot,
     onChange: function onChange(e) {
       return setNewSlot(e.target.value);
     },
-    placeholder: "09:00-10:30",
+    placeholder: "Ej: 09:00-10:30",
     style: {
-      flex: 1,
       background: 'var(--surface)',
       border: '1.5px solid var(--border)',
       borderRadius: 9,
@@ -4934,8 +5134,29 @@ function ProfSheet(_ref21) {
     onKeyDown: function onKeyDown(e) {
       return e.key === 'Enter' && addSlot();
     }
-  }), /*#__PURE__*/React.createElement("button", {
+  }), /*#__PURE__*/React.createElement("input", {
+    value: newSlotDesc,
+    onChange: function onChange(e) {
+      return setNewSlotDesc(e.target.value);
+    },
+    placeholder: "Actividad (opcional): Ej: Atenci\xF3n 1\xB0MA",
+    style: {
+      background: 'var(--surface)',
+      border: '1.5px solid var(--border)',
+      borderRadius: 9,
+      padding: '8px 12px',
+      fontSize: 14,
+      outline: 'none',
+      color: 'var(--ink)'
+    },
+    onKeyDown: function onKeyDown(e) {
+      return e.key === 'Enter' && addSlot();
+    }
+  })), /*#__PURE__*/React.createElement("button", {
     className: "btn btn-blue btn-sm",
+    style: {
+      alignSelf: 'flex-start'
+    },
     onClick: addSlot
   }, /*#__PURE__*/React.createElement("i", {
     className: "ph ph-plus"
@@ -4960,23 +5181,101 @@ function ProfSheet(_ref21) {
 /* ══ DOCUMENTOS (Coord) — Checklist DS N°170 Cartilla 5 ═════════════════ */
 function DocsScreen(_ref22) {
   var students = _ref22.students,
+    setStudents = _ref22.setStudents,
+    cursos = _ref22.cursos,
+    setCursos = _ref22.setCursos,
     checklists = _ref22.checklists,
     setChecklists = _ref22.setChecklists,
     revisions = _ref22.revisions,
     setRevisions = _ref22.setRevisions,
     user = _ref22.user;
-  var _useState65 = useState(''),
-    _useState66 = _slicedToArray(_useState65, 2),
-    search = _useState66[0],
-    setSearch = _useState66[1];
-  var _useState67 = useState(null),
-    _useState68 = _slicedToArray(_useState67, 2),
-    openChk = _useState68[0],
-    setOpenChk = _useState68[1];
-  var _useState69 = useState(false),
+  var _useState69 = useState(''),
     _useState70 = _slicedToArray(_useState69, 2),
-    showRevHistory = _useState70[0],
-    setShowRevHistory = _useState70[1];
+    search = _useState70[0],
+    setSearch = _useState70[1];
+  var _useState71 = useState(null),
+    _useState72 = _slicedToArray(_useState71, 2),
+    openChk = _useState72[0],
+    setOpenChk = _useState72[1];
+  var _useState73 = useState(false),
+    _useState74 = _slicedToArray(_useState73, 2),
+    showRevHistory = _useState74[0],
+    setShowRevHistory = _useState74[1];
+  var _useState75 = useState(''),
+    _useState76 = _slicedToArray(_useState75, 2),
+    importMsgDocs = _useState76[0],
+    setImportMsgDocs = _useState76[1];
+  var importExcelDocs = function importExcelDocs(e) {
+    var file = e.target.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function (ev) {
+      try {
+        var rows = ev.target.result.split(/\r?\n/).filter(function (r) {
+          return r.trim();
+        });
+        var newStudents = [];
+        var cursoActual = '';
+        rows.forEach(function (row) {
+          var cols = row.split(/[,;\t]/);
+          var c0 = (cols[0] || '').trim();
+          var c1 = (cols[1] || '').trim();
+          var c2 = (cols[2] || '').trim();
+          if (c0 && !c1) {
+            if (/\d|°/.test(c0)) {
+              cursoActual = c0.toUpperCase();
+            }
+            return;
+          }
+          var curso = cursoActual;
+          var nombre = '';
+          if (c0 && /\d°|°[A-Z]/.test(c0)) {
+            curso = c0.toUpperCase();
+            nombre = [c1, c2].filter(Boolean).join(' ').trim();
+          } else {
+            nombre = [c0, c1].filter(Boolean).join(' ').trim();
+          }
+          if (nombre.length > 3 && !nombre.match(/^(nombre|estudiante|alumno)/i)) {
+            if (!students.some(function (s) {
+              return s.nombre.toLowerCase() === nombre.toLowerCase();
+            })) {
+              newStudents.push({
+                id: newId(),
+                curso: curso || 'Sin curso',
+                nombre: nombre,
+                rut: '',
+                fnac: '',
+                nee: 'NEET',
+                diag: 'TDAH (Déficit Atencional e Hiperactividad)',
+                auth: '',
+                evalDate: '',
+                revalDate: '',
+                situacion: 'EN EVALUACIÓN',
+                profesional: '',
+                obs: 'Importado desde Excel'
+              });
+              if (curso && !cursos.includes(curso)) setCursos(function (p) {
+                return [].concat(_toConsumableArray(p), [curso]);
+              });
+            }
+          }
+        });
+        if (newStudents.length > 0) {
+          setStudents(function (p) {
+            return [].concat(_toConsumableArray(p), newStudents);
+          });
+          setImportMsgDocs('✓ ' + newStudents.length + ' estudiantes importados');
+        } else setImportMsgDocs('No se encontraron datos nuevos');
+        setTimeout(function () {
+          return setImportMsgDocs('');
+        }, 4000);
+      } catch (err) {
+        setImportMsgDocs('Error: ' + err.message);
+      }
+    };
+    reader.readAsText(file, 'UTF-8');
+    e.target.value = '';
+  };
   var filtered = useMemo(function () {
     return students.filter(function (s) {
       return !search || s.nombre.toLowerCase().includes(search.toLowerCase()) || s.rut.includes(search);
@@ -4999,7 +5298,38 @@ function DocsScreen(_ref22) {
   };
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(NavBar, {
     title: "Documentos PIE",
-    right: /*#__PURE__*/React.createElement("button", {
+    right: /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: 'flex',
+        gap: 10,
+        alignItems: 'center'
+      }
+    }, /*#__PURE__*/React.createElement("label", {
+      style: {
+        color: 'var(--green-dark)',
+        fontSize: 13,
+        fontWeight: 700,
+        cursor: 'pointer',
+        display: 'flex',
+        alignItems: 'center',
+        gap: 3,
+        background: 'var(--green-bg)',
+        padding: '6px 10px',
+        borderRadius: 8
+      }
+    }, /*#__PURE__*/React.createElement("i", {
+      className: "ph ph-file-arrow-up",
+      style: {
+        fontSize: 16
+      }
+    }), "Importar Excel", /*#__PURE__*/React.createElement("input", {
+      type: "file",
+      accept: ".csv,.txt,.tsv",
+      style: {
+        display: 'none'
+      },
+      onChange: importExcelDocs
+    })), /*#__PURE__*/React.createElement("button", {
       onClick: function onClick() {
         return setShowRevHistory(true);
       },
@@ -5008,8 +5338,18 @@ function DocsScreen(_ref22) {
         fontSize: 14,
         fontWeight: 600
       }
-    }, "Historial")
-  }), /*#__PURE__*/React.createElement("div", {
+    }, "Historial"))
+  }), importMsgDocs && /*#__PURE__*/React.createElement("div", {
+    style: {
+      margin: '6px 16px 0',
+      padding: '9px 14px',
+      background: 'var(--green-bg)',
+      color: 'var(--green-dark)',
+      borderRadius: 9,
+      fontSize: 13,
+      fontWeight: 600
+    }
+  }, importMsgDocs), /*#__PURE__*/React.createElement("div", {
     className: "search-wrap"
   }, /*#__PURE__*/React.createElement("div", {
     className: "search-bar"
@@ -5241,18 +5581,18 @@ function ChecklistSheet(_ref23) {
     user = _ref23.user,
     onClose = _ref23.onClose;
   var docs = getDocsForStudent(student);
-  var _useState71 = useState(_objectSpread({}, checklists[student.id] || {})),
-    _useState72 = _slicedToArray(_useState71, 2),
-    chk = _useState72[0],
-    setChk = _useState72[1];
-  var _useState73 = useState(''),
-    _useState74 = _slicedToArray(_useState73, 2),
-    obs = _useState74[0],
-    setObs = _useState74[1];
-  var _useState75 = useState(false),
-    _useState76 = _slicedToArray(_useState75, 2),
-    showSave = _useState76[0],
-    setShowSave = _useState76[1];
+  var _useState77 = useState(_objectSpread({}, checklists[student.id] || {})),
+    _useState78 = _slicedToArray(_useState77, 2),
+    chk = _useState78[0],
+    setChk = _useState78[1];
+  var _useState79 = useState(''),
+    _useState80 = _slicedToArray(_useState79, 2),
+    obs = _useState80[0],
+    setObs = _useState80[1];
+  var _useState81 = useState(false),
+    _useState82 = _slicedToArray(_useState81, 2),
+    showSave = _useState82[0],
+    setShowSave = _useState82[1];
   var toggle = function toggle(id) {
     return setChk(function (p) {
       var _p$id;
@@ -5634,14 +5974,14 @@ function ConfigScreen(_ref25) {
     setUser = _ref25.setUser,
     onLogout = _ref25.onLogout,
     saveNow = _ref25.saveNow;
-  var _useState77 = useState(false),
-    _useState78 = _slicedToArray(_useState77, 2),
-    showEditUser = _useState78[0],
-    setShowEditUser = _useState78[1];
-  var _useState79 = useState(_objectSpread({}, user)),
-    _useState80 = _slicedToArray(_useState79, 2),
-    uf = _useState80[0],
-    setUf = _useState80[1];
+  var _useState83 = useState(false),
+    _useState84 = _slicedToArray(_useState83, 2),
+    showEditUser = _useState84[0],
+    setShowEditUser = _useState84[1];
+  var _useState85 = useState(_objectSpread({}, user)),
+    _useState86 = _slicedToArray(_useState85, 2),
+    uf = _useState86[0],
+    setUf = _useState86[1];
   var THEMES = [{
     val: 'auto',
     label: 'Automático'
@@ -6242,92 +6582,89 @@ function ConfigScreen(_ref25) {
 
 /* ══ ROOT APP ════════════════════════════════════════════════════════════ */
 function App() {
-  var _useState81 = useState(function(){
-    try{var u=JSON.parse(localStorage.getItem('pie_user'));return u&&u.nombre?'app':'register';}
-    catch(e){return 'register';}
-  }),
-    _useState82 = _slicedToArray(_useState81, 2),
-    screen = _useState82[0],
-    setScreen = _useState82[1];
-  var _useState83 = useState(function () {
+  var _useState87 = useState('login'),
+    _useState88 = _slicedToArray(_useState87, 2),
+    screen = _useState88[0],
+    setScreen = _useState88[1];
+  var _useState89 = useState(function () {
       return lsGet('pie_user', null);
     }),
-    _useState84 = _slicedToArray(_useState83, 2),
-    user = _useState84[0],
-    _setUser = _useState84[1];
-  var _useState85 = useState('home'),
-    _useState86 = _slicedToArray(_useState85, 2),
-    tab = _useState86[0],
-    setTab = _useState86[1];
-  var _useState87 = useState('prof'),
-    _useState88 = _slicedToArray(_useState87, 2),
-    mode = _useState88[0],
-    setMode = _useState88[1];
-  var _useState89 = useState(function () {
+    _useState90 = _slicedToArray(_useState89, 2),
+    user = _useState90[0],
+    _setUser = _useState90[1];
+  var _useState91 = useState('home'),
+    _useState92 = _slicedToArray(_useState91, 2),
+    tab = _useState92[0],
+    setTab = _useState92[1];
+  var _useState93 = useState('prof'),
+    _useState94 = _slicedToArray(_useState93, 2),
+    mode = _useState94[0],
+    setMode = _useState94[1];
+  var _useState95 = useState(function () {
       return lsGet('pie_students', INIT_STUDENTS);
     }),
-    _useState90 = _slicedToArray(_useState89, 2),
-    students = _useState90[0],
-    setStudents = _useState90[1];
-  var _useState91 = useState(function () {
+    _useState96 = _slicedToArray(_useState95, 2),
+    students = _useState96[0],
+    setStudents = _useState96[1];
+  var _useState97 = useState(function () {
       return lsGet('pie_obs', INIT_OBS);
     }),
-    _useState92 = _slicedToArray(_useState91, 2),
-    observations = _useState92[0],
-    setObservations = _useState92[1];
-  var _useState93 = useState(function () {
+    _useState98 = _slicedToArray(_useState97, 2),
+    observations = _useState98[0],
+    setObservations = _useState98[1];
+  var _useState99 = useState(function () {
       return lsGet('pie_aula', INIT_AULA);
     }),
-    _useState94 = _slicedToArray(_useState93, 2),
-    aulaLogs = _useState94[0],
-    setAulaLogs = _useState94[1];
-  var _useState95 = useState(function () {
+    _useState100 = _slicedToArray(_useState99, 2),
+    aulaLogs = _useState100[0],
+    setAulaLogs = _useState100[1];
+  var _useState101 = useState(function () {
       return lsGet('pie_cursos', INIT_CURSOS);
     }),
-    _useState96 = _slicedToArray(_useState95, 2),
-    cursos = _useState96[0],
-    setCursos = _useState96[1];
-  var _useState97 = useState(function () {
+    _useState102 = _slicedToArray(_useState101, 2),
+    cursos = _useState102[0],
+    setCursos = _useState102[1];
+  var _useState103 = useState(function () {
       return lsGet('pie_profs', INIT_PROFS);
     }),
-    _useState98 = _slicedToArray(_useState97, 2),
-    profs = _useState98[0],
-    setProfs = _useState98[1];
-  var _useState99 = useState(function () {
+    _useState104 = _slicedToArray(_useState103, 2),
+    profs = _useState104[0],
+    setProfs = _useState104[1];
+  var _useState105 = useState(function () {
       return lsGet('pie_agenda', INIT_AGENDA);
     }),
-    _useState100 = _slicedToArray(_useState99, 2),
-    agenda = _useState100[0],
-    setAgenda = _useState100[1];
-  var _useState101 = useState(function () {
+    _useState106 = _slicedToArray(_useState105, 2),
+    agenda = _useState106[0],
+    setAgenda = _useState106[1];
+  var _useState107 = useState(function () {
       return lsGet('pie_evals', INIT_EVALS);
     }),
-    _useState102 = _slicedToArray(_useState101, 2),
-    evals = _useState102[0],
-    setEvals = _useState102[1];
-  var _useState103 = useState(function () {
+    _useState108 = _slicedToArray(_useState107, 2),
+    evals = _useState108[0],
+    setEvals = _useState108[1];
+  var _useState109 = useState(function () {
       return lsGet('pie_checklists', INIT_CHECKLISTS);
     }),
-    _useState104 = _slicedToArray(_useState103, 2),
-    checklists = _useState104[0],
-    setChecklists = _useState104[1];
-  var _useState105 = useState(function () {
+    _useState110 = _slicedToArray(_useState109, 2),
+    checklists = _useState110[0],
+    setChecklists = _useState110[1];
+  var _useState111 = useState(function () {
       return lsGet('pie_revisions', INIT_REVISIONS);
     }),
-    _useState106 = _slicedToArray(_useState105, 2),
-    revisions = _useState106[0],
-    setRevisions = _useState106[1];
-  var _useState107 = useState(function () {
+    _useState112 = _slicedToArray(_useState111, 2),
+    revisions = _useState112[0],
+    setRevisions = _useState112[1];
+  var _useState113 = useState(function () {
       return lsGet('pie_alerts', {
         enabled: true,
         minutes: 15,
         sound: false
       });
     }),
-    _useState108 = _slicedToArray(_useState107, 2),
-    alertSettings = _useState108[0],
-    setAlertSettings = _useState108[1];
-  var _useState109 = useState(function () {
+    _useState114 = _slicedToArray(_useState113, 2),
+    alertSettings = _useState114[0],
+    setAlertSettings = _useState114[1];
+  var _useState115 = useState(function () {
       return lsGet('pie_appsettings', {
         autoSave: true,
         saveInterval: 15,
@@ -6336,9 +6673,9 @@ function App() {
         accent: '#007AFF'
       });
     }),
-    _useState110 = _slicedToArray(_useState109, 2),
-    appSettings = _useState110[0],
-    setAppSettings = _useState110[1];
+    _useState116 = _slicedToArray(_useState115, 2),
+    appSettings = _useState116[0],
+    setAppSettings = _useState116[1];
   var _useToast = useToast(),
     _useToast2 = _slicedToArray(_useToast, 2),
     toast = _useToast2[0],
@@ -6383,10 +6720,10 @@ function App() {
       appSettings: appSettings
     };
   }, [students, observations, aulaLogs, cursos, profs, agenda, evals, checklists, revisions, user, alertSettings, appSettings]);
-  var _useState111 = useState('saved'),
-    _useState112 = _slicedToArray(_useState111, 2),
-    saveStatus = _useState112[0],
-    setSaveStatus = _useState112[1];
+  var _useState117 = useState('saved'),
+    _useState118 = _slicedToArray(_useState117, 2),
+    saveStatus = _useState118[0],
+    setSaveStatus = _useState118[1];
   var saveNow = useCallback(function () {
     lsSet('pie_students', students);
     lsSet('pie_obs', observations);
@@ -6498,7 +6835,8 @@ function App() {
     aulaLogs: aulaLogs,
     setAulaLogs: setAulaLogs,
     cursos: cursos,
-    setCursos: setCursos
+    setCursos: setCursos,
+    isCoord: curUser.isCoord
   }), tab === 'agenda' && /*#__PURE__*/React.createElement(AgendaScreen, {
     agenda: agenda,
     setAgenda: setAgenda,
@@ -6539,6 +6877,9 @@ function App() {
     alertSettings: alertSettings
   }), tab === 'docs' && /*#__PURE__*/React.createElement(DocsScreen, {
     students: students,
+    setStudents: setStudents,
+    cursos: cursos,
+    setCursos: setCursos,
     checklists: checklists,
     setChecklists: setChecklists,
     revisions: revisions,
