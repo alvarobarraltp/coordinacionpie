@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)file:///Users/alvarobarra/Downloads/diagnostico_1.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduMax PIE - Diagnóstico</title>
+<style>
+body{margin:0;font-family:system-ui,sans-serif;background:#1a1a2e;color:#fff;padding:20px}
+.box{background:rgba(255,255,255,.1);border-radius:12px;padding:16px;margin-bottom:12px}
+.ok{color:#34C759;font-weight:700}
+.err{color:#FF3B30;font-weight:700}
+input{width:100%;padding:14px;font-size:18px;border:2px solid #555;border-radius:10px;background:#2a2a3e;color:#fff;margin:8px 0;box-sizing:border-box}
+button{width:100%;padding:14px;font-size:18px;font-weight:700;background:#34C759;color:#fff;border:none;border-radius:10px;cursor:pointer;margin-top:8px}
+#log{font-family:monospace;font-size:13px;line-height:1.8}
+</style>
+</head>
+<body>
+<h2>🔍 EduMax PIE - Diagnóstico</h2>
+
+<div class="box" id="step1"><span class="ok">✓ Paso 1: HTML y JavaScript funcionan correctamente</span></div>
+<div class="box" id="step2">⏳ Paso 2: Cargando React...</div>
+<div class="box" id="step3">⏳ Paso 3: Test de contraseña</div>
+<div class="box">
+  <input type="password" id="pw" placeholder="Escribe: pie2026">
+  <button onclick="testLogin()">Probar Login</button>
+  <div id="loginResult" style="margin-top:10px;font-size:16px"></div>
+</div>
+<div class="box"><div id="log"><div class="ok">✓ JavaScript básico OK</div><div class="ok">✓ URL: file:///Users/alvarobarra/Downloads/diagnostico_1.html</div><div class="ok">✓ User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like </div></div></div>
+
+<script>
+var log = document.getElementById('log');
+function addLog(msg, ok) {
+  log.innerHTML += '<div class="' + (ok ? 'ok' : 'err') + '">' + msg + '</div>';
+}
+
+// Step 1: Basic JS works
+document.getElementById('step1').innerHTML = '<span class="ok">✓ Paso 1: HTML y JavaScript funcionan correctamente</span>';
+addLog('✓ JavaScript básico OK', true);
+addLog('✓ URL: ' + window.location.href, true);
+addLog('✓ User Agent: ' + navigator.userAgent.substring(0,80), true);
+
+// Step 2: Load React
+function testLogin() {
+  var p = document.getElementById('pw').value;
+  var r = document.getElementById('loginResult');
+  addLog('Contraseña ingresada: "' + p + '" (' + p.length + ' chars)', true);
+  addLog('Trim: "' + p.trim() + '"', true);
+  if (p.trim() === 'pie2026') {
+    r.innerHTML = '<span class="ok" style="font-size:20px">✓ ¡CORRECTO! El login funciona perfectamente aquí.</span>';
+    addLog('✓ LOGIN OK - contraseña correcta', true);
+  } else {
+    r.innerHTML = '<span class="err">✗ No coincide. Escribiste: "' + p.trim() + '"</span>';
+    addLog('✗ No coincide con "pie2026"', false);
+  }
+}
+
+document.getElementById('pw').addEventListener('keydown', function(e){
+  if(e.key==='Enter') testLogin();
+});
+</script>
+
+<script src="./EduMax PIE - Diagnóstico_files/react.production.min.js" onload="document.getElementById(&#39;step2&#39;).innerHTML=&#39;&lt;span class=\&#39;ok\&#39;&gt;✓ Paso 2: React cargó correctamente (&#39;+React.version+&#39;)&lt;/span&gt;&#39;; addLog(\&#39;✓ React \&#39;+ React.version + \&#39; OK\&#39;, true);" onerror="document.getElementById(&#39;step2&#39;).innerHTML=&#39;&lt;span class=\&#39;err\&#39;&gt;✗ Paso 2: React NO pudo cargarse desde CDN&lt;/span&gt;&#39;; addLog(\&#39;✗ React CDN FALLÓ\&#39;, false);">
+</script>
+
+
+</body></html>
